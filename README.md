@@ -120,3 +120,7 @@ CONCLUSION :
 
 This project demonstrates the complete NLP pipeline—from raw text preprocessing to model evaluation—for solving a real-world classification problem.
 It highlights the effectiveness of traditional machine learning models in text-based spam detection tasks.
+
+## 🚀 Live Demo
+
+👉 **[SMS Spam detection — Live Demo](https://sms-spam-detection-pqyqgltv2duwzub8ugoqik.streamlit.app/)**
