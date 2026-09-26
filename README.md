@@ -1,126 +1,141 @@
-# sms-spam-detection
-SMS Spam Detection using Machine Learning
+# 📱 SMS Spam Detection using Machine Learning
 
-PROJECT OVERVIEW:
+A machine learning and **Natural Language Processing (NLP)** project that classifies SMS messages as **Spam** or **Ham (Not Spam)** using text preprocessing, TF-IDF feature extraction, and multiple machine learning classifiers.
 
-This project focuses on building a machine learning–based SMS Spam Detection system that classifies messages as Spam or Ham (Not Spam).
-Natural Language Processing (NLP) techniques are used to preprocess text data, followed by feature extraction and model training to achieve accurate classification.
+## 🚀 Live Streamlit Dashboard
 
-OBJECTIVES:
+🔗 **Live App:** [Open SMS Spam Detection Dashboard](https://sms-spam-detection-pqyqgltv2duwzub8ugoqik.streamlit.app/)
 
-* To clean and preprocess raw SMS text data
+The interactive Streamlit dashboard provides access to:
 
-* To perform exploratory data analysis (EDA) to understand message patterns
+* 💬 **SMS Classification** — classify messages as Spam or Ham
+* 🧹 **Text Preprocessing** — clean and process raw SMS text
+* 📊 **Message Analysis** — explore spam/ham distribution and message patterns
+* 🔤 **TF-IDF Feature Extraction** — convert text into numerical features
+* 🤖 **Model Comparison** — compare Naive Bayes, Logistic Regression, and SVM
+* 📈 **Model Evaluation** — analyze accuracy, precision, and confusion matrix
+* 🎯 **Spam Prediction** — test custom SMS messages using the trained model
 
-* To convert text into numerical features using TF-IDF
+---
 
-* To train and evaluate multiple machine learning classifiers
+## 📌 Project Overview
 
-* To identify the best-performing model for spam detection
+This project focuses on building a **machine learning-based SMS Spam Detection system** that classifies messages as **Spam** or **Ham (Not Spam)**.
 
-DATASET:
+Natural Language Processing techniques are used to preprocess text data, followed by feature extraction and machine learning model training to achieve effective spam classification.
 
-* Dataset contains SMS messages labeled as spam or ham
+---
 
-* Columns include:
+## 🎯 Objectives
 
-1) Message text
+* 🧹 Clean and preprocess raw SMS text data
+* 📊 Perform Exploratory Data Analysis (EDA) to understand message patterns
+* 🔤 Convert text into numerical features using **TF-IDF**
+* 🤖 Train and evaluate multiple machine learning classifiers
+* 🏆 Compare model performance for spam detection
 
-2) Target label (Spam / Ham)
+---
 
-PROJECT WORKFLOW:
+## 📂 Dataset
 
-1) Data Cleaning:
+The dataset contains SMS messages labeled as **Spam** or **Ham**.
+
+### Dataset Columns
+
+* 💬 **Message** — SMS message text
+* 🎯 **Target Label** — Spam / Ham
+
+---
+
+## 🔄 Project Workflow
+
+### 1. Data Cleaning
 
 * Removed unnecessary columns
-
 * Handled missing values
-
 * Renamed columns for clarity
-
 * Encoded target labels
 
-2) Exploratory Data Analysis (EDA): 
+### 2. Exploratory Data Analysis
 
-* Distribution of spam vs ham messages
+The EDA phase includes:
 
-* Analysis of message length, word count, and character count
+* 📊 Spam vs Ham message distribution
+* 📏 Message length analysis
+* 🔢 Word count analysis
+* 🔤 Character count analysis
+* 🔥 Correlation analysis using heatmaps
+* 📈 Histograms and pair plots
 
-* Correlation analysis using heatmaps
+### 3. Text Preprocessing
 
-* Visualization using histograms and pair plots
-
-3) Text Preprocessing :
+The SMS text was processed using NLP techniques:
 
 * Converted text to lowercase
-
 * Tokenization
-
 * Removal of special characters and punctuation
-
 * Stopword removal
-
 * Stemming
 
-4) Feature Extraction :
+### 4. Feature Extraction
 
-* Used TF-IDF Vectorizer to transform text data into numerical features
+**TF-IDF Vectorization** was used to transform the processed SMS text into numerical feature representations suitable for machine learning models.
 
-5) Model Building :
+### 5. Model Building
 
-* Trained machine learning models such as:
+The following classifiers were trained and compared:
 
-    * Naive Bayes
+* 🧮 **Multinomial Naive Bayes**
+* 📈 **Logistic Regression**
+* 📐 **Support Vector Machine (SVM)**
 
-    * Logistic Regression
+### 6. Model Evaluation
 
-    * Support Vector Machine (SVM)
+Models were evaluated using:
 
-* Compared model performance
+* **Accuracy Score**
+* **Precision**
+* **Confusion Matrix**
 
-6) Model Evaluation :
+---
 
-* Accuracy score
+## 🏆 Best Model Performance
 
-* Precision
+**Multinomial Naive Bayes** achieved high precision and accuracy in the project evaluation.
 
-* Confusion Matrix
+It was particularly effective for minimizing false-positive spam classifications.
 
-BEST MODEL PERFORMANCE :
+---
 
-* Multinomial Naive Bayes achieved high precision and accuracy
+## 🛠️ Technologies Used
 
-* Particularly effective in minimizing false positives for spam messages
+### Programming Language
 
-TECHNOLOGIES USED :
+* **Python**
 
-* Programming Language: Python
+### Libraries
 
-* Libraries:
+* **NumPy**
+* **Pandas**
+* **Matplotlib**
+* **Seaborn**
+* **Scikit-learn**
+* **NLTK**
+* **Streamlit**
 
-    * NumPy
+---
 
-    * Pandas
+## 📊 Results
 
-    * Matplotlib
+* Successfully classified SMS messages as **Spam** or **Ham**
+* Achieved strong precision in spam classification
+* Demonstrated the effectiveness of traditional machine learning models for text classification
+* Built an interactive Streamlit interface for testing SMS messages
 
-    * Seaborn
+---
 
-    * Scikit-learn
+## 🏁 Conclusion
 
-    * NLTK
+This project demonstrates a complete **NLP and machine learning pipeline**, from raw text preprocessing and feature extraction to model training and evaluation.
 
-RESULTS :
-
-* Successfully classified SMS messages as spam or ham
-
-* Achieved strong precision, making the model suitable for real-world spam filtering systems
-
-CONCLUSION :
-
-This project demonstrates the complete NLP pipeline—from raw text preprocessing to model evaluation—for solving a real-world classification problem.
-It highlights the effectiveness of traditional machine learning models in text-based spam detection tasks.
-
-## 🚀 Live Demo
-
-👉 **[SMS Spam detection — Live Demo](https://sms-spam-detection-pqyqgltv2duwzub8ugoqik.streamlit.app/)**
+It highlights how traditional machine learning algorithms combined with **TF-IDF** can be effectively applied to real-world text classification problems such as SMS spam detection.
